@@ -18,6 +18,7 @@ android{
 }
 
 dependencies {
+    implementation(project(":core:model"))
     implementation(libs.hilt.android)
     implementation(libs.bundles.retrofit)
     kapt(libs.hilt.compiler)
