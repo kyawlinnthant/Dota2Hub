@@ -3,9 +3,6 @@ buildscript {
         google()
         mavenCentral()
     }
-    dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.21")
-    }
 }
 
 @Suppress("DSL_SCOPE_VIOLATION")
@@ -15,6 +12,7 @@ plugins {
     alias(libs.plugins.kotlin.android).apply(false)
     alias(libs.plugins.kotlin.kapt).apply(false)
     alias(libs.plugins.hilt).apply(false)
+    alias(libs.plugins.kotlin.serialization).apply(false)
 }
 
 //Workaround for "Expecting an expression" build error

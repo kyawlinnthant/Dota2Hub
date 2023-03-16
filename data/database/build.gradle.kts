@@ -1,4 +1,5 @@
 @file:Suppress("UnstableApiUsage")
+
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     alias(libs.plugins.android.application)
@@ -6,7 +7,7 @@ plugins {
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt)
 }
-android{
+android {
     namespace = "com.kyawlinnthant.database"
     compileSdk = 33
     defaultConfig {

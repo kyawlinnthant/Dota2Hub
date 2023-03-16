@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlin.serialization)
 }
 android{
     namespace = "com.kyawlinnthant.network"
@@ -18,5 +19,6 @@ android{
 
 dependencies {
     implementation(libs.hilt.android)
+    implementation(libs.bundles.retrofit)
     kapt(libs.hilt.compiler)
 }
