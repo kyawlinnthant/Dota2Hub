@@ -6,7 +6,6 @@ enum class PrimaryAttribute {
     INTELLIGENCE,
     OTHERS;
 }
-
 fun String.asPrimaryAttribute(): PrimaryAttribute {
     return when (this.trim()) {
         "str" -> PrimaryAttribute.STRENGTH

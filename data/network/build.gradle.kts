@@ -14,6 +14,11 @@ android{
         minSdk = 24
         targetSdk = 33
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField(
+            type = "String",
+            name = "BASE_URL",
+            value = "\"https://api.opendota.com/api/\""
+        )
     }
 }
 
@@ -22,4 +27,5 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.bundles.retrofit)
     kapt(libs.hilt.compiler)
+    implementation(libs.kotlinx.serialization.json)
 }

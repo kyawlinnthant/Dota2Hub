@@ -77,7 +77,6 @@ data class HeroDto(
             strengthGain = strengthGain,
             agilityGain = agilityGain,
             intelligenceGain = intelligenceGain
-
         ),
         matchStatus = MatchStatus(
             isEnabledInCaptainMode = isEnabledInCM,

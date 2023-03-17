@@ -1,5 +1,4 @@
 package com.kyawlinnthant.model.hero
-
 data class Hero(
     val id: Int = 0,
     val heroId: Int = 0,

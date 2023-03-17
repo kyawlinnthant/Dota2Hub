@@ -11,7 +11,6 @@ enum class Roles {
     DURABLE,
     OTHERS;
 }
-
 fun String.asRoles(): Roles {
     return when (this.trim()) {
         "Carry" -> Roles.CARRY

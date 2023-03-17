@@ -8,6 +8,7 @@ hiltExt = "1.0.0"
 room = "2.5.0"
 retrofit = "2.9.0"
 okhttp = "4.10.0"
+localebro = "1.0.8"
 kotlinxSerializationJson = "1.4.1"
 retrofitKotlinxSerializationJson = "0.8.0"
 
@@ -34,6 +35,9 @@ hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.r
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
+okhttp-profiler = { group = "com.localebro", name = "okhttpprofiler", version.ref = "localebro" }
+
+
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
@@ -64,7 +68,8 @@ androidx-room = [
 ]
 retrofit = [
     "retrofit.core",
-    "retrofit.kotlin.serialization"
+    "retrofit.kotlin.serialization",
+    "okhttp.profiler"
 ]
 
 [plugins]

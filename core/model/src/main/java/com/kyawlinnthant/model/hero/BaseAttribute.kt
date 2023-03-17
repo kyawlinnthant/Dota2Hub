@@ -1,5 +1,4 @@
 package com.kyawlinnthant.model.hero
-
 data class BaseAttribute(
     val baseHealth: Int = 0,
     val baseHealthRegen: Float = 0f,
